@@ -8,6 +8,11 @@
 *.iml
 *.iws
 *.iml
+graph-conf/target
+graph-core/target
+graph-meta/target
+graph-plugin/target
+graph-service/target
 # Mac
 .DS_Store
 
