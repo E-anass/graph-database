@@ -15,7 +15,7 @@
         <module>graph-service</module>
         <module>graph-plugin</module>
         <module>graph-meta</module>
-<!--        <module>graph-front</module>-->
+        <module>graph-front</module>
     </modules>
 
     <properties>
