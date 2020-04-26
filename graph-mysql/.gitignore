@@ -4,7 +4,6 @@ target/
 !**/src/main/**
 !**/src/test/**
 
-src/main/resources/static
 ### STS ###
 .apt_generated
 .classpath
@@ -27,6 +26,6 @@ src/main/resources/static
 /nbdist/
 /.nb-gradle/
 build/
-
+.mvn/wrapper/
 ### VS Code ###
 .vscode/

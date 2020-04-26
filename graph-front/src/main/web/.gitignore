@@ -9,8 +9,8 @@
 
 # dependencies
 /node_modules
-/src/main/resources/static
 
+/node
 
 
 # profiling files

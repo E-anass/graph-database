@@ -70,26 +70,6 @@
                         </configuration>
                     </execution>
                     <execution>
-                        <id>npm version</id>
-                        <goals>
-                            <goal>npm</goal>
-                        </goals>
-                        <phase>test</phase>
-                        <configuration>
-                            <arguments>--version</arguments>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>npm conf</id>
-                        <goals>
-                            <goal>npm</goal>
-                        </goals>
-                        <phase>test</phase>
-                        <configuration>
-                            <arguments>config ls -l</arguments>
-                        </configuration>
-                    </execution>
-                    <execution>
                         <id>npm build</id>
                         <goals>
                             <goal>npm</goal>
