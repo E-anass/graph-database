@@ -13,7 +13,6 @@
         <module>graph-conf</module>
         <module>graph-core</module>
         <module>graph-plugin</module>
-        <module>graph-service</module>
         <module>graph-mysql</module>
         <module>graph-neo4j</module>
         <module>graph-front</module>
