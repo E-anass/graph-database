@@ -1,4 +1,4 @@
-# Corona Vius World Mater
+# Corona Virus World Mater
 
 il s'agit d'un projet qui permet de sauvegarder les données du fournisseurs world mater corona virus .
 En temre technique le projet se base sur l'architecture microservice et l'utilisation de maven
