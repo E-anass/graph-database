@@ -1,5 +1,5 @@
 HELP.md
-target/
+
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
 !**/src/test/**
@@ -27,5 +27,11 @@ target/
 /.nb-gradle/
 build/
 
+graph-core/target/
+graph-front/target/
+graph-mysql/target/
+graph-neo4j/target/
+graph-plugin/target/
+graph-service/target/
 ### VS Code ###
 .vscode/
