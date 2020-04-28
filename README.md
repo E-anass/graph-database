@@ -16,7 +16,7 @@ le projet sur base sur  µServices :
 
 ### graph-front
 
-µService contient l'application Angular qui tourne sur un projet spring boot sur le port 8082
+µService contient l'application Angular qui tourne sur un serveur web nginx sur le port 8083
 
 
 ### graph-mysql
@@ -36,26 +36,9 @@ le projet sur base sur  µServices :
 
 ##docker 
 l'utilisation de docker pour démarrer la base de données mysql et neo4j
+sudo su 
 
-docker rm master
-
-docker rm mysqlserver
-
-docker run \
-     -d \
-     --name master \
-     --publish=7474:7474 --publish=7687:7687 \
-     --volume=$HOME/neo4j/data:/data \
-     --volume=$HOME/neo4j/logs:/logs \
-     --user="$(id -u):$(id -g)" \
-     neo4j:latest
-
-
-docker run \
-  -d \
-  --name mysqlserver \
-  -e MYSQL_ROOT_PASSWORD=root \
-  mysql
+copie les commandes du fichier DockerFile 
 
 ##maven
 
