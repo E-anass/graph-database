@@ -29,6 +29,7 @@ build/
 
 graph-core/target/
 graph-front/target/
+graph-front/src/main/resources/
 graph-mysql/target/
 graph-neo4j/target/
 graph-plugin/target/

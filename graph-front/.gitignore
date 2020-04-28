@@ -26,3 +26,5 @@ target/
 build/
 ### VS Code ###
 .vscode/
+
+resources/
