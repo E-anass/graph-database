@@ -16,16 +16,15 @@ le projet sur base sur  µServices :
 
 ### graph-front
 
-µService contient l'application Angular qui tourne sur un serveur web nginx sur le port 8083
-
+µService contient l'application Angular qui tourne sur un serveur web nginx sur le port 8083 en mode ng serve sur 4200
 
 ### graph-mysql
 
-µService  assure la communication entre la base de données mysql et le projet en question 
+µService  assure la communication entre la base de données mysql et le projet en question 8082
 
 ### graph-neo4j
 
-µService maintient la connection enter la base de données neo4j et le projet en question
+µService maintient la connection enter la base de données neo4j et le projet en question 8084
 
 ### graph-plugin
 
