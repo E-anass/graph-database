@@ -18,7 +18,7 @@ import java.time.LocalDateTime;
 public class Schedule implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String label;
     private String cron;

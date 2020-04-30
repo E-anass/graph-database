@@ -9,9 +9,17 @@ const routes: Routes = [
     path: '',
     component: LayoutComponent,
     children: [
-      { path: '', component: SchedulesComponent}
+      {
+        path: 'admin', children: [
+          {
+            path: 'schedules',
+            component: SchedulesComponent
+          }
+        ]
+      }
     ]
   }
+
 ];
 
 @NgModule({

@@ -8,6 +8,7 @@ import { SharedModule} from "./shared/shared.module";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule} from "./angular-material.module";
 import {AdminModule} from "./admin/admin.module";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {AdminModule} from "./admin/admin.module";
     AngularMaterialModule,
     SharedModule,
     BrowserAnimationsModule,
-    AdminModule
+    AdminModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

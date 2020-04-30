@@ -26,7 +26,8 @@ HELP.md
 /nbdist/
 /.nb-gradle/
 build/
-
+run.sh
+DockerFile.sh
 graph-core/target/
 graph-front/target/
 graph-front/src/main/resources/

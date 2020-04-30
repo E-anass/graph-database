@@ -1,9 +1,18 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
     <button mat-icon-button (click)="toggleSideBar()">
-      <mat-icon >menu</mat-icon>
+      <mat-icon>menu</mat-icon>
     </button>
-    <span>Corona viruse world mater</span>
+
+    <div fxFlex fxLayout="row" fxLayoutAlign="flex-start">
+      <div fxLayout="row" fxLayoutGap="20px">
+        <button mat-button [matMenuTriggerFor]="menu">Administration</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item routerLink="/admin/schedules/">Gestion des scynhronisations</button>
+          <button mat-menu-item>Requete cypher</button>
+        </mat-menu>
+      </div>
+    </div>
     <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
       <ul fxLayout="row" fxLayoutGap="20px">
         <li>
