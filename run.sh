@@ -1,3 +1,5 @@
+echo "KILL 8761"
+kill $(lsof -t -i:8761)
 echo "KILL 8085"
 kill $(lsof -t -i:8085)
 echo "KILL 8084"

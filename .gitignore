@@ -35,6 +35,7 @@ graph-mysql/target/
 graph-neo4j/target/
 graph-plugin/target/
 graph-service/target/
+graph-eureka/target/
 ### VS Code ###
 .vscode/
 Supprimerait src/main/java/
