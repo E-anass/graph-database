@@ -4,6 +4,8 @@ import {map} from "rxjs/operators";
 import {MatTableDataSource} from "@angular/material/table";
 import {Schedule} from "../../core/module/schedule";
 import {MatPaginator} from "@angular/material/paginator";
+import {MatDialog} from "@angular/material/dialog";
+import {UpdateComponent} from "./update/update.component";
 
 @Component({
   selector: 'app-schedules',
@@ -16,7 +18,10 @@ export class SchedulesComponent implements OnInit {
   dataSource: any;
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
 
-  constructor(private webService: WebService) {
+  constructor(
+    private webService: WebService,
+    public dialog: MatDialog
+  ) {
   }
 
   ngOnInit(): void {
@@ -49,7 +54,16 @@ export class SchedulesComponent implements OnInit {
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
-  getRecord(name: any) {
-    alert(name)
+  updateSchedule(element: Schedule) {
+    debugger;
+    const dialogRef = this.dialog.open(UpdateComponent, {
+      width: '250px',
+      data: element
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      console.log(result);
+    });
   }
 }

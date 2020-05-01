@@ -14,11 +14,11 @@ docker run \
 
 
 docker run \
-  -d \
-  --name mysqlserver \
-  -e MYSQL_ROOT_PASSWORD=root \
-  --restart=always \
-  mysql
+     -d \
+     --name mysqlserver \
+     -e MYSQL_ROOT_PASSWORD=root \
+     --restart=always \
+     mysql
 
 
 docker run \

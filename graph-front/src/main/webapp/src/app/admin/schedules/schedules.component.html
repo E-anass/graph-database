@@ -36,9 +36,9 @@
     </ng-container>
     <!-- Get Details -->
     <ng-container matColumnDef="actions">
-      <th mat-header-cell *matHeaderCellDef > Historique</th>
+      <th mat-header-cell *matHeaderCellDef > mise à jours</th>
       <td mat-cell *matCellDef="let element">
-        <button mat-raised-button color="warn" (click)="getRecord(element.label)">Historique</button>
+        <button mat-raised-button  color="update" (click)="updateSchedule(element)">update</button>
       </td>
     </ng-container>
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
